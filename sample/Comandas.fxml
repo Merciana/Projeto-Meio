@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerComanda">
+   <children>
+      <TableView fx:id="tabelaComanda" layoutX="14.0" layoutY="14.0" prefHeight="256.0" prefWidth="568.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+        <columns>
+          <TableColumn fx:id="colunaGarcom" prefWidth="108.0" text="Garçom" />
+          <TableColumn fx:id="colunaPedido" prefWidth="355.0" text="Pedido" />
+            <TableColumn fx:id="colunaValor" prefWidth="104.0" text="Valor" />
+        </columns>
+      </TableView>
+      <Button fx:id="botaoLiberarMesa" layoutX="192.0" layoutY="359.0" mnemonicParsing="false" text="Liberar Mesa" />
+      <Button fx:id="botaoFinalizarPedido" layoutX="325.0" layoutY="359.0" mnemonicParsing="false" text="Finalizar Pedido" />
+      <Button fx:id="botaoAplicarDesconto" layoutX="473.0" layoutY="359.0" mnemonicParsing="false" text="Aplicar Desconto" AnchorPane.rightAnchor="16.0" />
+      <TextField fx:id="textFieldTotal" layoutX="420.0" layoutY="285.0" />
+      <TextField fx:id="textFieldDesconto" layoutX="420.0" layoutY="322.0" />
+      <Label layoutX="344.0" layoutY="285.0" text="Total">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="322.0" text="Desconto">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

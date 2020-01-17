@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #aaaaaa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Pedidos">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="56.0" prefHeight="530.0" prefWidth="640.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <TableView fx:id="tabelaPedidos" layoutX="247.0" layoutY="185.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colunaMesa" prefWidth="75.0" text="Mesa" />
+                <TableColumn fx:id="colunaPedido" prefWidth="322.0" text="Pedido" />
+                  <TableColumn fx:id="colunaGarcom" prefWidth="93.0" text="Gatçom" />
+                  <TableColumn fx:id="colunaHorario" prefWidth="149.0" text="Horário" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="691.0" layoutY="51.0" prefHeight="320.0" prefWidth="273.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ComboBox fx:id="comboBoxPedidoAtual" layoutX="101.0" layoutY="44.0" prefWidth="150.0" />
+            <ComboBox fx:id="comboBoxGarcom" layoutX="101.0" layoutY="116.0" prefWidth="150.0" />
+            <Button fx:id="botaoAdicionar" layoutX="31.0" layoutY="83.0" mnemonicParsing="false" text="Adicionar" />
+            <Button fx:id="botaoEliminar" layoutX="190.0" layoutY="83.0" mnemonicParsing="false" text="Eliminar" />
+            <TextArea fx:id="textAreaComentarios" layoutX="21.0" layoutY="157.0" prefHeight="79.0" prefWidth="230.0" />
+            <Button fx:id="botaoEditarPedido" layoutX="31.0" layoutY="241.0" mnemonicParsing="false" text="Editar Pedido" />
+            <Button fx:id="botaoFecharMesa" layoutX="162.0" layoutY="241.0" mnemonicParsing="false" text="Fechar Mesa" />
+            <Button fx:id="botaoCozinha" layoutX="21.0" layoutY="275.0" mnemonicParsing="false" text="Enviar Para Cozinha" />
+            <Label layoutX="31.0" layoutY="143.0" text="Comentários" />
+            <Label layoutX="30.0" layoutY="121.0" text="Garçom" />
+            <Label layoutX="17.0" layoutY="51.0" text="Pedido Atual" />
+            <Label layoutX="18.0" layoutY="1.0" text="Pedido">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
